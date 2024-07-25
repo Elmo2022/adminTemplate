@@ -10,7 +10,7 @@ import Products from './views/Products';
 import ColorPicker from './components/colorPicker';
 const { SubMenu } = Menu;
 const { Header, Sider, Content } = Layout;
-
+import route from './router'
 const App: React.FC = () => {
   return (
     <Router>
@@ -56,12 +56,7 @@ const App: React.FC = () => {
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
             </Breadcrumb>
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/users" element={<Users />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/color-picker" element={<ColorPicker />} />
-            </Routes>
+            {route}
           </Content>
         </Layout>
       </Layout>
