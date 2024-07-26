@@ -50,12 +50,9 @@ const App: React.FC = () => {
               </Menu.Item>
           </Menu>
         </Sider>
-        <Layout>
-          <Header className="site-layout-background" style={{ padding: 0 }} />
+        <Layout>22222
+          <Header className="site-layout-background" style={{ padding: 0 }} />1111111
           <Content style={{ margin: '0 16px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-            </Breadcrumb>
             {route}
           </Content>
         </Layout>
